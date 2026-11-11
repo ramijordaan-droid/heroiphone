@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090711">
+  <title>Hero iPhone | عالم الآيفون</title>
+  <style>
+    :root{--bg:#090711;--panel:#151222;--purple:#a855f7;--pink:#e879f9;--text:#f7f4ff;--muted:#b8b1c9}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(ellipse at 75% 0%,#291442 0,transparent 38%),var(--bg);color:var(--text);font-family:Tahoma,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1100px,92%);margin:auto}
+    header{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+    .brand{font-size:25px;font-weight:900;letter-spacing:-1px}.brand span{color:var(--pink)}
+    nav{display:flex;gap:24px;color:var(--muted);font-size:14px}nav a:hover{color:white}
+    .btn{display:inline-block;padding:12px 22px;border-radius:999px;background:linear-gradient(110deg,var(--purple),var(--pink));color:white;font-weight:800;box-shadow:0 8px 30px #a855f744}
+    .hero{min-height:490px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:30px;padding:48px 0 70px}
+    .eyebrow{color:var(--pink);font-size:13px;font-weight:bold;letter-spacing:2px}
+    h1{font-size:clamp(42px,7vw,76px);line-height:1.12;margin:16px 0}
+    h1 span{background:linear-gradient(90deg,#fff,#d8a5ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{color:var(--muted);line-height:1.9;max-width:520px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.ghost{border:1px solid #514267;border-radius:999px;padding:12px 22px;color:#eee}
+    .visual{height:330px;border:1px solid #57377a;border-radius:34px;background:linear-gradient(145deg,#25143a,#100d1c 65%);display:grid;place-items:center;position:relative;overflow:hidden;box-shadow:0 0 70px #922de533}
+    .ring{position:absolute;width:270px;height:270px;border:2px solid #c084fc;border-radius:50%;box-shadow:0 0 35px #a855f7,inset 0 0 35px #a855f755}
+    .phone{position:relative;width:132px;height:245px;border:5px solid #c9c3d7;border-radius:28px;background:linear-gradient(145deg,#27153c,#090711);transform:rotate(-10deg);box-shadow:15px 20px 40px #000}
+    .phone:before{content:"";position:absolute;top:8px;left:8px;width:47px;height:47px;border-radius:15px;background:radial-gradient(circle at 35% 35%,#aab8d4 0 5px,#15131d 7px 11px,transparent 13px),radial-gradient(circle at 70% 35%,#aab8d4 0 5px,#15131d 7px 11px,transparent 13px),radial-gradient(circle at 35% 70%,#aab8d4 0 5px,#15131d 7px 11px,transparent 13px),#393044}
+    .phone:after{content:"";position:absolute;inset:65px 10px 12px;border-radius:18px;background:linear-gradient(145deg,#9b4de8,#20102f 55%,#080711)}
+    .apple{position:absolute;top:28px;font-size:48px;color:#eadcff;text-shadow:0 0 25px #c084fc}
+    .section-title{text-align:center;font-size:30px;margin:12px 0 8px}.sub{text-align:center;color:var(--muted);margin:0 0 28px}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:20px 0 75px}
+    .feature,.product{background:linear-gradient(145deg,#1b1628,#100d19);border:1px solid #302440;border-radius:20px;padding:22px;text-align:center}
+    .feature b{display:block;margin:8px 0}.feature p{color:var(--muted);font-size:13px;margin:0}
+    .products{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:70px}
+    .product-art{height:145px;border-radius:15px;background:radial-gradient(circle,#60318a,#171020 65%);display:grid;place-items:center;font-size:56px;margin-bottom:16px}
+    .product h3{margin:8px 0}.product p{color:var(--muted);font-size:13px}.product .btn{font-size:13px;padding:9px 17px}
+    .contact{text-align:center;padding:36px 18px;margin-bottom:50px;border:1px solid #57377a;border-radius:24px;background:linear-gradient(120deg,#211331,#100d19)}
+    footer{border-top:1px solid #292132;padding:22px 0;color:#8e879e;text-align:center;font-size:12px}
+    @media(max-width:700px){nav{display:none}.hero{grid-template-columns:1fr;padding-top:35px}.visual{height:280px}.features,.products{grid-template-columns:1fr}.feature{padding:18px}.brand{font-size:22px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="#">HERO <span>iPhone</span></a>
+      <nav><a href="#home">الرئيسية</a><a href="#products">الأجهزة</a><a href="#features">مميزاتنا</a><a href="#contact">تواصل معنا</a></nav>
+      <a class="btn" href="#products">تصفح الأجهزة</a>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div>
+          <div class="eyebrow">WELCOME TO HERO IPHONE</div>
+          <h1>اختَر آيفونك<br><span>بأسلوبك</span></h1>
+          <p class="lead">كل اللي بتدور عليه بعالم الآيفون بمكان واحد. اكتشف الأجهزة والموديلات، وتواصل معنا لمعرفة التفاصيل والسعر.</p>
+          <div class="actions"><a class="btn" href="#products">شوف الأجهزة</a><a class="ghost" href="#contact">تواصل معنا</a></div>
+        </div>
+        <div class="visual" aria-label="تصميم هاتف ذكي"><div class="ring"></div><div class="apple">●</div><div class="phone"></div></div>
+      </section>
+
+      <section id="features">
+        <h2 class="section-title">ليش Hero iPhone؟</h2>
+        <p class="sub">تجربة شراء سهلة وواضحة</p>
+        <div class="features">
+          <div class="feature"><div>✦</div><b>خيارات متنوعة</b><p>موديلات ومساحات مختلفة لتختار اللي بناسبك.</p></div>
+          <div class="feature"><div>✓</div><b>تواصل مباشر</b><p>اسأل عن تفاصيل الجهاز والسعر قبل الشراء.</p></div>
+          <div class="feature"><div>➜</div><b>خدمة سهلة</b><p>خطوات بسيطة من الاستفسار لحد إتمام طلبك.</p></div>
+        </div>
+      </section>
+
+      <section id="products">
+        <h2 class="section-title">أجهزة الآيفون</h2>
+        <p class="sub">اختَر الموديل واستفسر عن المتوفر</p>
+        <div class="products">
+          <article class="product"><div class="product-art">📱</div><h3>iPhone Pro</h3><p>أداء قوي وتجربة تصوير مميزة</p><a class="btn" href="#contact">استفسر عن السعر</a></article>
+          <article class="product"><div class="product-art">📱</div><h3>iPhone Plus</h3><p>شاشة كبيرة وتجربة استخدام مريحة</p><a class="btn" href="#contact">استفسر عن السعر</a></article>
+          <article class="product"><div class="product-art">📱</div><h3>iPhone</h3><p>أناقة وأداء للاستخدام اليومي</p><a class="btn" href="#contact">استفسر عن السعر</a></article>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2>جاهز تختار جهازك؟</h2>
+        <p class="lead" style="margin:10px auto 22px">تواصل مع Hero iPhone واسأل عن الموديلات المتوفرة والأسعار.</p>
+        <a class="btn" href="mailto:hello@example.com">راسلنا</a>
+      </section>
+    </main>
+    <footer>© 2026 Hero iPhone — جميع الحقوق محفوظة</footer>
+  </div>
+</body>
+</html>
